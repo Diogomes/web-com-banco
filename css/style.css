@@ -1,3 +1,26 @@
 body{
     background:rgb(255, 0, 191);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+header {
+    margin-top: 50px;
+}
+
+h1 {
+    color: black;
+    font-family: Arial;
+}
+
+h2 {
+    font-family: fantasy;
+}
+
+p {
+    font-size: 18px;
+
+}
+
+img { /* margem abaixo da foto */
+    margin-bottom: 20px;
 }
