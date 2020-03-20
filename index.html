@@ -3,53 +3,90 @@
     <head>
         <meta charset="utf8">
         <title>Página Estrela Festas</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-            
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
     </head>
 
     <body>
-
-
-        <nav> <!--navegação insere menus-->
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" width="140" height="120">
+            </a>
+        
+         <!--navegação insere menus-->
             <ul>
-                <li><a href="#Produtos">Produtos</a></li>
-                <li><a href="#Portifolio">Portifolio</a:</li>
-                <li><a href="#Redes Sociais">Redes Sociais</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-                <li><a href="#Sobre Nós">Sobre Nós</a></li>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a class="nav-link" href="#Produtos">
+                                <button type="button" class="btn btn-primary">Produtos</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Portifolio">
+                                <button type="button" class="btn btn-primary">Portifolio</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Redes Sociais">
+                                <button type="button" class="btn btn-primary">Redes Sociais</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Contatos">
+                                <button type="button" class="btn btn-primary">Contatos</button>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#Sobre Nós">
+                                <button type="button" class="btn btn-primary">Produtos</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-
+            </nav>
             </ul>
 
 
-        </nav>
         <h1>Estrela Festas</h1>
 
         <header>
 
         <section id="Produtos"> <!-- separa as seções dos conteudos-->
-            <h2>Produtos</h2>
-            <p>
-                Oferecemos os melhores produtos da região
-            </p>
-            
-            <div>
-                <img src="img/produto-torta-chocolate-brigadeiro.jpg" width="200px">
-            </div>
+            <div class="container-fluid produtos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                                <img src="img/produto-torta-chocolate-brigadeiro.jpg" class="rounded-circle" width="200px">
+                        </div>
+                            
+                        <div class="col-lg-4">
+                            <img src="img/bolo-tematico-azael-pocoyo.jpg" class="rounded-circle" width="200px">
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <img src="img/doces-azuis.jpg"class="rounded-circle" width="200px">
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <img src="img/doces-brigadeiro-supresauva.jpg" class="rounded-circle" width="200px">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="img/salgados-coxinhas.jpg" class="rounded-circle" width="200px" height="160px">
+                        </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div>
-                <img src="img/bolo-tematico-azael-pocoyo.jpg" width="200px">
-            </div>
-
-            <div>
-                <img src="img/doces-azuis.jpg" width="200px">
-            </div>
-
-            <div>
-                <img src="img/doces-brigadeiro-supresauva.jpg" width="200px">
-            </div>
-            <div>
-                <img src="img/salgados-coxinhas.jpg" width="200px">
+                <h2>
+                    Produtos
+                </h2>
+                     <p>
+                         Oferecemos os melhores produtos da região
+                    </p>
+                    
             </div>
 
 
@@ -101,12 +138,14 @@
         </section>
 
         <section id="Sobre Nós">
-            <h2>Sobre Nós</h2>
-
-
+            <div class="container-fluid Sobre-Nos">
+                <h2>Sobre Nós</h2>
+                    <p>
+                        Oferecemos Produtos de qualidade
+                        para sua festa e confraternização
+                    </p>
+            </div>
         </section>
-            <p>Oferecemos Produtos de qualidade
-                para sua festa e confraternização</p>
 
         </header>
         
